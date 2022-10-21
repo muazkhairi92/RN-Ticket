@@ -36,7 +36,9 @@ function MainContainer() {
     <QueryClientProvider client={queryClient}>
 
     <NavigationContainer>
-      <TicketStack.Navigator initialRouteName='Login'>
+      <TicketStack.Navigator initialRouteName='Login'   screenOptions={{
+    headerShown: false
+  }}>
       <TicketStack.Screen name={'Login'} component={Login}/>
       <TicketStack.Screen name={'Home'} component={BottomNavigator}/>
       <TicketStack.Screen name={MyTicketName} component={MyTicketScreen} />
