@@ -4,7 +4,7 @@ import * as React from 'react';
 import { View, Text, FlatList, Pressable, StyleSheet, SafeAreaView, ScrollView } from 'react-native';
 import useAuth from '../../hooks/useAuth';
 
-export default function MyTicketScreen({ props }) {
+export default function MyTicketScreen( props ) {
 
     const {token,user} = useAuth();
 

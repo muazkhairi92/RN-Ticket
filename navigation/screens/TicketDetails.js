@@ -7,13 +7,13 @@ export const TicketDetails = (props) =>{
 
     return(
         <View  style={styles.card}>
-            <Text style={styles.text}>#{ticket.id}: {ticket.title}</Text>
-           <View style={styles.det}><Text > Description:</Text><Text> {ticket.description}</Text></View>
-           <View style={styles.det}><Text > Category:</Text><Text> {ticket.category}</Text></View>
-           <View style={styles.det}><Text > Priority Level:</Text><Text> {ticket.level}</Text></View>
-           <View style={styles.det}><Text > Status:</Text><Text> {ticket.status}</Text></View>
-           <View style={styles.det}><Text > Created By:</Text><Text> {ticket.support_name}</Text></View>
-           <View style={styles.det}><Text >Assign To: </Text><Text> {ticket.developer_name}</Text></View>
+            <Text style={styles.text}>#{ticket.item.id}: {ticket.item.title}</Text>
+           <Text > Description: {ticket.item.description}</Text>
+           <Text > Category: {ticket.item.category}</Text>
+           <Text > Priority Level: {ticket.item.level}</Text>
+           <Text > Status:{ticket.item.status}</Text>
+           <Text > Created By: {ticket.item.support_name}</Text>
+           <Text >Assign To: {ticket.item.developer_name}</Text>
       
         </View>
 
