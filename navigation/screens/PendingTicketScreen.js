@@ -17,9 +17,9 @@ export default function PendingTicketScreen( props ) {
     
       const {data, isLoading,isError,error,isFetching,refetch} = useQuery(["tick"],fetchTicket,{
         enabled:true,
-        onSuccess:(res)=>{console.log('tahniah',res);
-    },
-    onError:(res)=>{console.log('error',res)}
+    //     onSuccess:(res)=>{console.log('tahniah',res);
+    // },
+    // onError:(res)=>{console.log('error',res)}
     });
     
     if (isLoading) {

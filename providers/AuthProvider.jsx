@@ -39,7 +39,7 @@ const AuthProvider = ({ children }) => {
     // console.log(luser);
     //     JSON.stringify(luser);
       const {data, isError} = await signIn(luser);
-      console.log(data);
+      // console.log(data);
       if(data.message === 'Login Success' && data.data.token){
         setToken(data.data.token);
         setUser(data.data.user);

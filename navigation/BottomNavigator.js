@@ -4,6 +4,7 @@ import CompleteTicketScreen from "./screens/CompleteTicketScreen";
 import MyTicketScreen from "./screens/MyTicketScreen";
 import PendingTicketScreen from "./screens/PendingTicketScreen";
 import { MaterialCommunityIcons } from '@expo/vector-icons'; 
+import { Entypo } from '@expo/vector-icons'; 
 
 
 
@@ -20,7 +21,10 @@ const BottomNavigator=()=>{
               let rn = route.name;  
               if (rn === 'Logout') {
               // You can return any component that you like here!
-              return <MaterialCommunityIcons name="logout" size={24} color="black" />;
+              return <MaterialCommunityIcons name="logout" size={15} color="black" />;
+              }
+              else{
+                return <Entypo name="ticket" size={15} color="black" />
               }
             },
             tabBarLabelStyle:{
@@ -28,6 +32,7 @@ const BottomNavigator=()=>{
             fontSize: 20,
             activeTintColor: '#ecf0f3',
             inactiveTintColor: 'grey',
+            justifyContent:"center",
             labelStyle: { paddingBottom: 10,  },
             style: { padding: 10, height: 120}
             }
